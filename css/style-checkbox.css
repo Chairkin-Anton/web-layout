@@ -1,0 +1,72 @@
+.container {
+    width: 300px;
+    height: 400px;
+    background: #E5E5E5;
+}
+.wrapper {
+    padding-top: 24px;
+    padding-left: 15px;
+    width: 176px;
+    min-height: 309px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.group__form {
+    padding-top: 10px;
+    width: 176px;
+    min-height: 285px;
+    border: none;
+    border-radius: 10px;
+}
+.form__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.form-list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.check {
+    position: relative;
+    padding-left: 15px;
+}
+.check__input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.check__box{
+    position: relative;
+    width: 15px;
+    height: 15px;
+}
+.check__input:focus + .check__box::after {
+    outline: 2px solid #CCB26E;
+}
+.check__box::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: 4px;
+    left: -8px;
+    margin-left: -15px;
+    border: 1px solid #CCB26E;
+    border-radius: 3px;
+}
+.check__box::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: -19px;
+    width: 8px;
+    height: 4px;
+    border: 1px solid #CCB26E;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
+}
+.check__input:checked + .check__box::before {
+    opacity: 1;
+}

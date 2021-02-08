@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/justValidateTooltip.css">
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts-form.css">
+	<link rel="stylesheet" href="css/style-form.css">
+</head>
+
+<body>
+  <div class="container">
+    <form class="form just-validate-tooltip-container" id="form" action="">
+      <label class="label-form" for="name">Как Вас зовут?
+        <input class="input-form" required id="name" type="text" name="name" placeholder="Имя*" minlength="2" maxlength="25" data-validate-field="name">
+      </label>      
+      <label class="label-form" for="tel">Укажите Ваш телефон
+        <input class="input-form" required id="tel" type="tel" name="tel" minlength="10" maxlength="10" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone">
+      </label>         
+      <label class="label-form" for="email">Укажите Ваш e-mail
+        <input class="input-form input-form-last-child" required id="email" type="email" name="email" placeholder="E-mail*" data-validate-field="mail">
+      </label>      
+      <button class="btn-form">Заказать</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

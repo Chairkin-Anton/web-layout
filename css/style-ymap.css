@@ -1,0 +1,7 @@
+.yandex-map {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}

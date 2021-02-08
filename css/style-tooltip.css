@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  padding: 20px 90px 20px 29px;
+  width: 375px;
+  min-height: 160px;
+}
+
+.description {
+  line-height: 24px;
+  white-space: pre-line;
+  letter-spacing: 0.03em;
+}
+
+.tooltip-marker {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 75%;
+  left: 68%;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z' fill='%23BCBCBC'/%3E%3C/svg%3E");
+  cursor: pointer;
+}
+.tooltip-popup {
+  position: absolute;
+  padding: 7px 5px 5px 15px;
+  width: 163px;
+  min-height: 37px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg width='163' height='38' viewBox='0 0 163 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H163V31H84.7817L80.9012 37.276L76.9418 31H0V0Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  top: 49%;
+  left: 49%;
+}
+.tooltip-marker:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z' fill='%23CCB26E'/%3E%3C/svg%3E");
+}
+.tooltip-marker:hover + .tooltip-popup,
+.tooltip-marker:focus + .tooltip-popup {
+  opacity: 1;  
+}

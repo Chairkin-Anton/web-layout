@@ -1,0 +1,18 @@
+.container {
+    height: 400px;
+    overflow: hidden;
+    padding-top: 5px;
+  }
+  .customScroll {
+    width: 395px;
+    height: 300px;
+    padding: 15px 30px 0 30px;
+    line-height: 24px;
+  }
+
+  .simplebar-content-wrapper {
+    overflow: auto;
+  }
+  .simplebar-scrollbar::before {
+    background-color: #ac7f10;
+  }
